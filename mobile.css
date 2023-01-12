@@ -1,0 +1,136 @@
+@media (max-width: 992px) {
+    .padded {
+        padding: 1% 6%;
+    }
+
+    .main-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-list {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* HAMBURGER */
+    .navbar-nav {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 40%;
+        height: 100vh;
+        gap: 1rem;
+        background-color: rgba(8, 8, 8, 0.9);
+        margin: 0;
+        top: 0;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #777;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-list h1 {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar2 {
+        display: none;
+    }
+
+    .hamburger.active .bar1 {
+        position: relative;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active .bar3 {
+        transform: rotate(-45deg);
+    }
+
+    .navbar-nav.active {
+        left: 0;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-content .row {
+        flex-direction: column;
+    }
+
+    .about-content .row .col {
+        width: 100%;
+    }
+
+    /* MENU SECTION */
+
+    .list-item {
+        padding: 2rem 0;
+        font-size: 0.6em;
+    }
+
+    .menu-boxes .row {
+        flex-direction: column;
+    }
+
+    /* BOOKING SECTION */
+
+    .booking-content .row {
+        flex-direction: column;
+    }
+
+    .booking-content .row .col {
+        width: 100%;
+    }
+
+    .booking-content .row .col:nth-child(1) {
+        padding: 5rem 0;
+    }
+
+    .booking-content .row .col:nth-child(2) {
+        padding: 2rem 0;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    /* Blog section */
+
+    .blog-content .row {
+        flex-direction: column;
+    }
+
+    .blog-content .row .col {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* CTA SECTION */
+
+    #cta .container .row {
+        flex-direction: column;
+    }
+
+    #cta .container .row .col {
+        width: 100%;
+    }
+}
+
+@media (max-width:560px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+}
